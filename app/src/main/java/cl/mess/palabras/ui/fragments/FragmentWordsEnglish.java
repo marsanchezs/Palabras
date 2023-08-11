@@ -42,7 +42,6 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_words_english, container, false);
         context = getActivity();
         llv = view.findViewById(R.id.llvFW);
