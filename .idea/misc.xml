@@ -1,0 +1,64 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/drawable/agregar.xml" value="0.206" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/drawable/autor.xml" value="0.206" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/drawable/borde2.xml" value="0.206" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/drawable/border.xml" value="0.206" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/drawable/fondo_mensaje.xml" value="0.206" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/dialog_add.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/dialog_detail.xml" value="0.1" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/fragment_quotes.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/fragment_words_english.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/fragment_words_spanish.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/lista.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/mensaje.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/message.xml" value="0.1" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/ventana.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/ventana_autor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/ventana_contacto.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/ventana_detalle.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/ventana_reportes.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/view_word_english.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/view_word_spanish.xml" value="0.16576086956521738" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/vista_cita.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/vista_palabra.xml" value="0.20416666666666666" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/layout/vista_word.xml" value="0.5" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/Java/Palabras/app/src/main/res/menu/mi_menu.xml" value="0.1" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/drawable/borde.xml" value="0.2203125" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/drawable/borde2.xml" value="0.2203125" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/drawable/boton_forma.xml" value="0.2203125" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/drawable/fondo_mensaje.xml" value="0.2203125" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/activity_vidor_pdf.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/activity_visor_pdf.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/fragment_fragmento_citas.xml" value="0.4083333333333333" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/fragment_fragmento_palabras.xml" value="0.33" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/fragment_fragmento_words.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/lista.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/mensaje (2).xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/mensaje.xml" value="0.67" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/ventana.xml" value="0.4584795321637427" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/ventana_autor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/ventana_contacto.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/ventana_detalle.xml" value="0.5" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/ventana_palabra.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/ventana_reportes.xml" value="0.33" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/vista_cita.xml" value="0.5684647302904564" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/vista_palabra.xml" value="0.5" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/layout/vista_word.xml" value="0.6777583187390543" />
+        <entry key="..\:/Users/marsa/AndroidStudioProjects/Palabras/app/src/main/res/menu/mi_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

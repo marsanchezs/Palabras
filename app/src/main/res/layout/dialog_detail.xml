@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space style="@style/espacio" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_words_spanish"
+                android:contentDescription="@string/icon" />
+
+            <Space style="@style/espacioVertical" />
+
+            <TextView
+                style="@style/texto"
+                android:id="@+id/tvTitle"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <Space style="@style/espacio" />
+
+        <View
+            android:id="@+id/linea"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/texto"
+                android:id="@+id/tvMeaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/app_name"
+                android:textSize="15sp"/>
+
+            <TextView
+                style="@style/texto"
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="end"
+                android:textAlignment="center"
+                android:text="@string/author"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageButton
+                style="@style/botonVentana"
+                android:id="@+id/btnEdit"
+                app:srcCompat="@drawable/edit"
+                android:contentDescription="@string/icon" />
+
+            <ImageButton
+                style="@style/botonVentana"
+                android:id="@+id/btnDelete"
+                app:srcCompat="@drawable/delete"
+                android:contentDescription="@string/icon" />
+        </TableRow>
+
+        <Space style="@style/espacio" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

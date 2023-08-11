@@ -1,0 +1,101 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Palabras" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="texto">
+        <item name="android:fontFamily">@font/lemon_milk_light</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorLetra</item>
+        <item name="android:textColorHint">@color/colorLetra</item>
+    </style>
+
+    <style name="logo">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="botonVentana">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!-- ESPACIOS -->
+    <style name="espacio">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">12dp</item>
+    </style>
+
+    <style name="espacio2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+    </style>
+
+    <style name="espacio3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+    </style>
+
+    <style name="espacioVertical">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="espacioVertical2">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="espacioVertical3">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- TOOLBAR -->
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="android:fontFamily">@font/lemon_milk_light</item>
+        <item name="android:textColorSecondary">@color/colorLetra</item>
+        <item name="android:textColor">@color/colorLetra</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- PESTAÑAS -->
+    <style name="tabs" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/lemon_milk_light</item>
+    </style>
+
+    <style name="imagenDialogo">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="botonEditText">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+</resources>

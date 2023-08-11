@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">+Palabras</string>
+    <string name="icon">Ícono</string>
+    <string name="words_spanish">Palabras</string>
+    <string name="no_words_spanish">Sin Palabras</string>
+    <string name="quotes">Citas</string>
+    <string name="no_quotes">Sin citas</string>
+    <string name="author">Autor</string>
+    <string name="words_english">Words</string>
+    <string name="no_words_english">No words</string>
+    <string name="word_spanish">Palabra</string>
+    <string name="quote">Cita</string>
+    <string name="word_english">Word</string>
+    <string name="meaning">Significado</string>
+    <string name="translation">Traducción</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="search">Buscar…</string>
+    <string name="reports">Reportes</string>
+    <string name="contact">Contacto</string>
+    <string name="exit">Salir</string>
+    <string name="whatsApp">+56941063216</string>
+    <string name="gmail">marsanchezs@gmail.com</string>
+    <string name="linkedin">https://linkedin.com/in/mario-sánchez-954b01a9</string>
+    <string name="github">https://github.com/marsanchezs/</string>
+    <string name="type">Tipo</string>
+    <string name="general">General</string>
+    <string name="by_date">Por fecha</string>
+    <string name="from">Desde</string>
+    <string name="to">Hasta</string>
+    <string name="date">00–00–0000</string>
+    <string name="select">Seleccionar…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_visor_pdf">VisorPDF</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

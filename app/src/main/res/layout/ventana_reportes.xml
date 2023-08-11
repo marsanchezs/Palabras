@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space style="@style/espacio" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgVR"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_reports"
+                android:contentDescription="@string/icon" />
+
+            <Space style="@style/espacioVertical" />
+
+            <TextView
+                style="@style/texto"
+                android:id="@+id/txtReportesVR"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reports"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <Space style="@style/espacio" />
+
+        <View
+            android:id="@+id/linea"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_2">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLetra">
+
+                    <Spinner
+                        android:id="@+id/spReportesVR"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:backgroundTint="@color/colorFondoMensaje"/>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <Space style="@style/espacio" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_2"
+                android:layout_gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTipoVR"
+                    style="@style/texto"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/type" />
+
+                <Space style="@style/espacioVertical" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbGeneralVR"
+                        style="@style/texto"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/general"
+                        app:buttonTint="@color/colorLetra" />
+
+
+                    <RadioButton
+                        android:id="@+id/rbPorFechaVR"
+                        style="@style/texto"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/by_date"
+                        app:buttonTint="@color/colorLetra" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trPorFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_2"
+                android:layout_gravity="center"
+                android:padding="5dp">
+
+                <Space style="@style/espacioVertical3" />
+
+                <LinearLayout
+                    android:id="@+id/llDesdeVR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDesdeVR"
+                        style="@style/texto"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/from" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/imgDesdeVR"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/calendar"
+                            android:contentDescription="@string/icon" />
+
+                        <TextView
+                            android:id="@+id/txtFechaDesdeVR"
+                            style="@style/texto"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/date" />
+                    </TableRow>
+
+                </LinearLayout>
+
+                <Space style="@style/espacioVertical3" />
+
+                <View
+                    android:id="@+id/linea1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLetra" />
+
+                <Space style="@style/espacioVertical3" />
+
+                <LinearLayout
+                    android:id="@+id/llHastaVR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtHastaVR"
+                        style="@style/texto"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/to" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/imgHastaVR"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/calendar"
+                            android:contentDescription="@string/icon" />
+
+                        <TextView
+                            android:id="@+id/txtFechaHastaVR"
+                            style="@style/texto"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/date" />
+                    </TableRow>
+
+                </LinearLayout>
+
+                <Space style="@style/espacioVertical3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:id="@+id/imgPdfVR"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_pdf"
+                    android:contentDescription="@string/icon" />
+
+                <Space style="@style/espacioVertical" />
+                <Space style="@style/espacioVertical" />
+
+                <ImageView
+                    android:id="@+id/imgXlsVR"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_xls"
+                    android:contentDescription="@string/icon" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

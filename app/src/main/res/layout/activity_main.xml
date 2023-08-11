@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutMA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar"
+            app:tabTextColor="@color/colorLetra"
+            app:tabTextAppearance="@style/tabs">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabWordsSpanish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_words_spanish"
+                android:text="@string/words_spanish" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabQuotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_quotes"
+                android:text="@string/quotes" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabWordsEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_words_english"
+                android:text="@string/words_english" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/visorMA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
