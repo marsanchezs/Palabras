@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.FragmentWordsSpanish">
+    tools:context=".ui.fragments.spanishwords.FragmentWordsSpanish">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:id="@+id/llvFP"
+        android:id="@+id/ll_empty_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imgNoWordsSpanish"
+            android:id="@+id/iv_empty"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
@@ -27,7 +27,7 @@
             android:contentDescription="@string/icon" />
 
         <TextView
-            android:id="@+id/txtFP"
+            android:id="@+id/tv_no_words"
             style="@style/texto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/llvFP2"
+            android:id="@+id/ll_screen_with_words"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -63,7 +63,7 @@
                 tools:ignore="UselessParent">
 
                 <ImageView
-                    android:id="@+id/imgSearch"
+                    android:id="@+id/iv_search"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
@@ -71,7 +71,7 @@
                     app:srcCompat="@drawable/buscar" />
 
                 <AutoCompleteTextView
-                    android:id="@+id/edtSearch"
+                    android:id="@+id/actv_search"
                     style="@style/texto"
                     android:textSize="14sp"
                     android:completionThreshold="1"
@@ -89,7 +89,7 @@
                 android:background="@drawable/border_2">
 
                 <TextView
-                    android:id="@+id/txtWord"
+                    android:id="@+id/tv_word"
                     style="@style/texto"
                     android:textSize="14sp"
                     android:padding="10dp"
@@ -105,7 +105,7 @@
                     android:background="@color/colorLetra" />
 
                 <TextView
-                    android:id="@+id/txtMeaning"
+                    android:id="@+id/tv_meaning"
                     style="@style/texto"
                     android:textSize="14sp"
                     android:padding="10dp"
@@ -117,7 +117,7 @@
             </TableRow>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvWordsSpanish"
+                android:id="@+id/rv_spanish_words"
                 android:background="@drawable/border_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -126,7 +126,7 @@
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/btnAddWordSpanish"
+            android:id="@+id/ib_add_spanish_word"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginEnd="30dp"

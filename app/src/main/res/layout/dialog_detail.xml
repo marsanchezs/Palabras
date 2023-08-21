@@ -21,7 +21,7 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/iv"
+                android:id="@+id/iv_title"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 app:srcCompat="@drawable/ic_words_spanish"
@@ -31,7 +31,7 @@
 
             <TextView
                 style="@style/texto"
-                android:id="@+id/tvTitle"
+                android:id="@+id/tv_title"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
 
             <TextView
                 style="@style/texto"
-                android:id="@+id/tvMeaning"
+                android:id="@+id/tv_meaning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -66,7 +66,7 @@
 
             <TextView
                 style="@style/texto"
-                android:id="@+id/tvAuthor"
+                android:id="@+id/tv_author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -85,13 +85,13 @@
 
             <ImageButton
                 style="@style/botonVentana"
-                android:id="@+id/btnEdit"
+                android:id="@+id/ib_edit"
                 app:srcCompat="@drawable/edit"
                 android:contentDescription="@string/icon" />
 
             <ImageButton
                 style="@style/botonVentana"
-                android:id="@+id/btnDelete"
+                android:id="@+id/ib_delete"
                 app:srcCompat="@drawable/delete"
                 android:contentDescription="@string/icon" />
         </TableRow>

@@ -32,7 +32,7 @@
             <Space style="@style/espacio2" />
 
             <TextView
-                android:id="@+id/tvAuthor"
+                android:id="@+id/tv_author"
                 style="@style/texto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

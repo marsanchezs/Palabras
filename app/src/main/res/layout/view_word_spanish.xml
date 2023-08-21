@@ -38,7 +38,7 @@
                 android:background="@color/colorLetra" />
 
             <TextView
-                android:id="@+id/tvMeaning"
+                android:id="@+id/tv_meaning"
                 style="@style/texto"
                 android:textSize="8sp"
                 android:padding="5dp"

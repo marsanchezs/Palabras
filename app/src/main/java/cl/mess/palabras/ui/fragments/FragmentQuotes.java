@@ -51,7 +51,7 @@ public class FragmentQuotes extends Fragment implements AdapterQuote.onClickQuot
         context = getActivity();
         llv = (LinearLayout) view.findViewById(R.id.llvFC);
         llv2 = (LinearLayout) view.findViewById(R.id.llvFC2);
-        edtSearch = (AutoCompleteTextView) view.findViewById(R.id.edtSearch);
+        edtSearch = (AutoCompleteTextView) view.findViewById(R.id.actv_search);
         ImageButton btnAddQuote = (ImageButton) view.findViewById(R.id.btnAddQuote);
         rvQuotes = (RecyclerView) view.findViewById(R.id.rvQuotes);
         rvQuotes.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -122,12 +122,12 @@ public class FragmentQuotes extends Fragment implements AdapterQuote.onClickQuot
         View view = inflate.inflate(R.layout.dialog_detail,null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = (ImageView) view.findViewById(R.id.iv);
-        TextView tvTitle = (TextView) view.findViewById(R.id.tvTitle);
-        TextView tvQuote = (TextView) view.findViewById(R.id.tvMeaning);
-        TextView tvAuthor = (TextView) view.findViewById(R.id.tvAuthor);
-        ImageButton btnEdit = (ImageButton) view.findViewById(R.id.btnEdit);
-        ImageButton btnDelete = (ImageButton) view.findViewById(R.id.btnDelete);
+        ImageView iv = (ImageView) view.findViewById(R.id.iv_title);
+        TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
+        TextView tvQuote = (TextView) view.findViewById(R.id.tv_meaning);
+        TextView tvAuthor = (TextView) view.findViewById(R.id.tv_author);
+        ImageButton btnEdit = (ImageButton) view.findViewById(R.id.ib_edit);
+        ImageButton btnDelete = (ImageButton) view.findViewById(R.id.ib_delete);
 
         iv.setImageResource(R.drawable.ic_quotes);
         tvTitle.setText(R.string.quote);
@@ -159,15 +159,15 @@ public class FragmentQuotes extends Fragment implements AdapterQuote.onClickQuot
         View view = inflate.inflate(R.layout.dialog_add,null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = (ImageView) view.findViewById(R.id.iv);
-        TextView tvTitle = (TextView) view.findViewById(R.id.tvTitle);
-        LinearLayout llvWordSpanish = (LinearLayout) view.findViewById(R.id.llvWordSpanish);
-        LinearLayout llvQuote = (LinearLayout) view.findViewById(R.id.llvQuote);
-        EditText edtQuote = (EditText) view.findViewById(R.id.edtQuote);
-        AutoCompleteTextView edtAuthor = (AutoCompleteTextView) view.findViewById(R.id.edtAuthor);
-        ImageButton btnAddAuthor = (ImageButton) view.findViewById(R.id.btnAddAuthor);
-        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.btnAccept);
-        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.btnCancel);
+        ImageView iv = (ImageView) view.findViewById(R.id.iv_title);
+        TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
+        LinearLayout llvWordSpanish = (LinearLayout) view.findViewById(R.id.ll_spanish_word);
+        LinearLayout llvQuote = (LinearLayout) view.findViewById(R.id.ll_quote);
+        EditText edtQuote = (EditText) view.findViewById(R.id.et_quote);
+        AutoCompleteTextView edtAuthor = (AutoCompleteTextView) view.findViewById(R.id.actv_author);
+        ImageButton btnAddAuthor = (ImageButton) view.findViewById(R.id.ib_add_author);
+        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.ib_accept);
+        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.ib_cancel);
 
         iv.setImageResource(R.drawable.edit);
         tvTitle.setText(R.string.edit);
@@ -235,11 +235,11 @@ public class FragmentQuotes extends Fragment implements AdapterQuote.onClickQuot
         View view = inflate.inflate(R.layout.dialog_detail,null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = (ImageView) view.findViewById(R.id.iv);
-        TextView tvTitle = (TextView) view.findViewById(R.id.tvTitle);
-        TextView tvMessage = (TextView) view.findViewById(R.id.tvMeaning);
-        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.btnEdit);
-        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.btnDelete);
+        ImageView iv = (ImageView) view.findViewById(R.id.iv_title);
+        TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
+        TextView tvMessage = (TextView) view.findViewById(R.id.tv_meaning);
+        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.ib_edit);
+        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.ib_delete);
 
         iv.setImageResource(R.drawable.delete);
         tvTitle.setText(R.string.delete);
@@ -282,15 +282,15 @@ public class FragmentQuotes extends Fragment implements AdapterQuote.onClickQuot
         View view = inflate.inflate(R.layout.dialog_add,null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = (ImageView) view.findViewById(R.id.iv);
-        TextView tvTitle = (TextView) view.findViewById(R.id.tvTitle);
-        LinearLayout llvWordSpanish = (LinearLayout) view.findViewById(R.id.llvWordSpanish);
-        LinearLayout llvQuote = (LinearLayout) view.findViewById(R.id.llvQuote);
-        EditText edtQuote = (EditText) view.findViewById(R.id.edtQuote);
-        AutoCompleteTextView edtAuthor = (AutoCompleteTextView) view.findViewById(R.id.edtAuthor);
-        ImageButton btnAddAuthor = (ImageButton) view.findViewById(R.id.btnAddAuthor);
-        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.btnAccept);
-        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.btnCancel);
+        ImageView iv = (ImageView) view.findViewById(R.id.iv_title);
+        TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
+        LinearLayout llvWordSpanish = (LinearLayout) view.findViewById(R.id.ll_spanish_word);
+        LinearLayout llvQuote = (LinearLayout) view.findViewById(R.id.ll_quote);
+        EditText edtQuote = (EditText) view.findViewById(R.id.et_quote);
+        AutoCompleteTextView edtAuthor = (AutoCompleteTextView) view.findViewById(R.id.actv_author);
+        ImageButton btnAddAuthor = (ImageButton) view.findViewById(R.id.ib_add_author);
+        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.ib_accept);
+        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.ib_cancel);
 
         iv.setImageResource(R.drawable.ic_quotes);
         tvTitle.setText(R.string.quotes);
@@ -355,9 +355,9 @@ public class FragmentQuotes extends Fragment implements AdapterQuote.onClickQuot
         View view = inflater.inflate(R.layout.dialog_add_author,null);
         builder.setView(view);
         dialog = builder.create();
-        AutoCompleteTextView edtAuthor = (AutoCompleteTextView) view.findViewById(R.id.edtAuthor);
-        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.btnAccept);
-        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.btnCancel);
+        AutoCompleteTextView edtAuthor = (AutoCompleteTextView) view.findViewById(R.id.actv_author);
+        ImageButton btnAccept = (ImageButton) view.findViewById(R.id.ib_accept);
+        ImageButton btnCancel = (ImageButton) view.findViewById(R.id.ib_cancel);
 
         getAuthors(edtAuthor);
 

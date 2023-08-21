@@ -46,7 +46,7 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
         context = getActivity();
         llv = view.findViewById(R.id.llvFW);
         llv2 = view.findViewById(R.id.llvFW2);
-        edtSearch = view.findViewById(R.id.edtSearch);
+        edtSearch = view.findViewById(R.id.actv_search);
         ImageButton btnAddWordEnglish = view.findViewById(R.id.btnAddWordEnglish);
         rvWordEnglish = view.findViewById(R.id.rvWordsEnglish);
         rvWordEnglish.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -112,11 +112,11 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
         View view = inflate.inflate(R.layout.dialog_detail, null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = view.findViewById(R.id.iv);
-        TextView tvWordEnglish = view.findViewById(R.id.tvTitle);
-        TextView tvTranslation = view.findViewById(R.id.tvMeaning);
-        ImageButton btnEdit = view.findViewById(R.id.btnEdit);
-        ImageButton btnDelete = view.findViewById(R.id.btnDelete);
+        ImageView iv = view.findViewById(R.id.iv_title);
+        TextView tvWordEnglish = view.findViewById(R.id.tv_title);
+        TextView tvTranslation = view.findViewById(R.id.tv_meaning);
+        ImageButton btnEdit = view.findViewById(R.id.ib_edit);
+        ImageButton btnDelete = view.findViewById(R.id.ib_delete);
 
         iv.setImageResource(R.drawable.ic_words_english);
         tvWordEnglish.setText(wordEnglish.getWord());
@@ -135,14 +135,14 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
         View view = inflate.inflate(R.layout.dialog_add, null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = view.findViewById(R.id.iv);
-        TextView tvTitle = view.findViewById(R.id.tvTitle);
-        LinearLayout llvWordSpanish = view.findViewById(R.id.llvWordSpanish);
-        LinearLayout llvWordEnglish = view.findViewById(R.id.llvWordEnglish);
-        EditText edtWordEnglish = view.findViewById(R.id.edtWordEnglish);
-        EditText edtTranslation = view.findViewById(R.id.edtTranslation);
-        ImageButton btnAccept = view.findViewById(R.id.btnAccept);
-        ImageButton btnCancel = view.findViewById(R.id.btnCancel);
+        ImageView iv = view.findViewById(R.id.iv_title);
+        TextView tvTitle = view.findViewById(R.id.tv_title);
+        LinearLayout llvWordSpanish = view.findViewById(R.id.ll_spanish_word);
+        LinearLayout llvWordEnglish = view.findViewById(R.id.ll_english_word);
+        EditText edtWordEnglish = view.findViewById(R.id.et_english_word);
+        EditText edtTranslation = view.findViewById(R.id.et_translation);
+        ImageButton btnAccept = view.findViewById(R.id.ib_accept);
+        ImageButton btnCancel = view.findViewById(R.id.ib_cancel);
 
         iv.setImageResource(R.drawable.edit);
         tvTitle.setText(R.string.edit);
@@ -194,11 +194,11 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
         View view = inflate.inflate(R.layout.dialog_detail, null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = view.findViewById(R.id.iv);
-        TextView tvTitle = view.findViewById(R.id.tvTitle);
-        TextView tvMessage = view.findViewById(R.id.tvMeaning);
-        ImageButton btnAccept = view.findViewById(R.id.btnEdit);
-        ImageButton btnCancel = view.findViewById(R.id.btnDelete);
+        ImageView iv = view.findViewById(R.id.iv_title);
+        TextView tvTitle = view.findViewById(R.id.tv_title);
+        TextView tvMessage = view.findViewById(R.id.tv_meaning);
+        ImageButton btnAccept = view.findViewById(R.id.ib_edit);
+        ImageButton btnCancel = view.findViewById(R.id.ib_delete);
 
         iv.setImageResource(R.drawable.delete);
         tvTitle.setText(R.string.delete);
@@ -233,14 +233,14 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
         View view = inflate.inflate(R.layout.dialog_add, null);
         builder.setView(view);
         dialog = builder.create();
-        ImageView iv = view.findViewById(R.id.iv);
-        TextView tvTitle = view.findViewById(R.id.tvTitle);
-        LinearLayout llvWordSpanish = view.findViewById(R.id.llvWordSpanish);
-        LinearLayout llvWordEnglish = view.findViewById(R.id.llvWordEnglish);
-        EditText edtWordEnglish = view.findViewById(R.id.edtWordEnglish);
-        EditText edtTranslation = view.findViewById(R.id.edtTranslation);
-        ImageButton btnAccept = view.findViewById(R.id.btnAccept);
-        ImageButton btnCancel = view.findViewById(R.id.btnCancel);
+        ImageView iv = view.findViewById(R.id.iv_title);
+        TextView tvTitle = view.findViewById(R.id.tv_title);
+        LinearLayout llvWordSpanish = view.findViewById(R.id.ll_spanish_word);
+        LinearLayout llvWordEnglish = view.findViewById(R.id.ll_english_word);
+        EditText edtWordEnglish = view.findViewById(R.id.et_english_word);
+        EditText edtTranslation = view.findViewById(R.id.et_translation);
+        ImageButton btnAccept = view.findViewById(R.id.ib_accept);
+        ImageButton btnCancel = view.findViewById(R.id.ib_cancel);
 
         iv.setImageResource(R.drawable.ic_words_english);
         tvTitle.setText(R.string.word_english);

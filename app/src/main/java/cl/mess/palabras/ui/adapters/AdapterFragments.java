@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import cl.mess.palabras.ui.fragments.FragmentQuotes;
-import cl.mess.palabras.ui.fragments.FragmentWordsSpanish;
+import cl.mess.palabras.ui.fragments.spanishwords.FragmentWordsSpanish;
 import cl.mess.palabras.ui.fragments.FragmentWordsEnglish;
 
 public class AdapterFragments extends FragmentPagerAdapter {

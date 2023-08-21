@@ -21,7 +21,7 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/iv"
+                android:id="@+id/iv_title"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 app:srcCompat="@drawable/add_author"
@@ -60,7 +60,7 @@
                 android:padding="3dp">
 
                 <AutoCompleteTextView
-                    android:id="@+id/edtAuthor"
+                    android:id="@+id/actv_author"
                     style="@style/texto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -81,13 +81,13 @@
 
             <ImageButton
                 style="@style/botonVentana"
-                android:id="@+id/btnAccept"
+                android:id="@+id/ib_accept"
                 app:srcCompat="@drawable/ic_accept"
                 android:contentDescription="@string/icon" />
 
             <ImageButton
                 style="@style/botonVentana"
-                android:id="@+id/btnCancel"
+                android:id="@+id/ib_cancel"
                 app:srcCompat="@drawable/ic_cancel"
                 android:contentDescription="@string/icon" />
         </TableRow>

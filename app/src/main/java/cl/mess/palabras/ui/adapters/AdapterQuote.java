@@ -51,7 +51,7 @@ public class AdapterQuote extends RecyclerView.Adapter<AdapterQuote.ViewHolder>{
         public ViewHolder(View v) {
             super(v);
             tvQuote = (TextView) v.findViewById(R.id.tvQuote);
-            tvAuthor = (TextView) v.findViewById(R.id.tvAuthor);
+            tvAuthor = (TextView) v.findViewById(R.id.tv_author);
             v.setOnClickListener(this);
         }
 

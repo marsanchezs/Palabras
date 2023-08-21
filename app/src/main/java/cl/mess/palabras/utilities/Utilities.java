@@ -1,137 +1,146 @@
 package cl.mess.palabras.utilities;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.core.content.ContextCompat;
-
-import com.itextpdf.text.BadElementException;
-import com.itextpdf.text.Image;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import cl.mess.palabras.R;
 
 public class Utilities {
-    public String validation(EditText edtPalabra, EditText edtSignificado){
-        String palabra = edtPalabra.getText().toString();
-        String significado = edtSignificado.getText().toString();
-        String respuesta = "";
-        if((palabra.isEmpty()) && (significado.isEmpty())){
-            respuesta = "1";
-        }else if(palabra.isEmpty()){
-            respuesta = "2";
-        }else if(significado.isEmpty()){
-            respuesta = "3";
-        }else{
-            respuesta = "OK";
+    public static final String SPANISH_WORDS = "PALABRAS";
+    public static final String SPANISH_QUOTES = "CITAS";
+    public static final String ENGLISH_WORDS = "WORDS";
+    public static final String OK = "OK";
+    public static final String NOK = "NOK";
+    public static final String ONE = "1";
+    public static final String TWO = "2";
+    public static final String THREE = "3";
+
+    public String validation(EditText etWord, EditText etMeaning) {
+        String word = etWord.getText().toString();
+        String meaning = etMeaning.getText().toString();
+        String response;
+        if ((word.isEmpty()) && (meaning.isEmpty())) {
+            response = ONE;
+        } else if (word.isEmpty()) {
+            response = TWO;
+        } else if (meaning.isEmpty()) {
+            response = THREE;
+        } else {
+            response = OK;
         }
-        return respuesta;
+        return response;
     }
 
-    public void showMessages(Context contexto, String respuesta, EditText edtPalabra, EditText edtSignificado, String pantalla){
-        System.out.println("RESPUESTA: "+respuesta+"|PANTALLA "+pantalla);
-        String mensaje = "";
-        switch(respuesta){
-            case "1":
-
-                switch(pantalla){
-                    case "PALABRAS":
-                        mensaje = "Ingresar una palabra y su significado";
+    public void showMessages(
+            Context context,
+            String response,
+            EditText etWord,
+            EditText etMeaning,
+            String screen
+    ) {
+        String message = "";
+        switch (response) {
+            case ONE:
+                switch (screen) {
+                    case SPANISH_WORDS:
+                        message = context.getString(R.string.enter_a_word_and_its_meaning);
                         break;
-                    case "CITAS":
-                        mensaje = "Ingresar una cita y su autor";
+                    case SPANISH_QUOTES:
+                        message = context.getString(R.string.enter_a_quote_and_its_author);
                         break;
-                    case "WORDS":
-                        mensaje = "Ingresar una palabra en inglés y su significado";
+                    case ENGLISH_WORDS:
+                        message = context.getString(R.string.enter_an_word_or_phrase_in_english_and_its_meaning);
                         break;
                 }
-
-                //mensaje = "Ingresar una palabra y su significado";
-                showMessage(contexto, mensaje, "NOK");
-                edtPalabra.requestFocus();
+                showMessage(context, message, NOK);
+                etWord.requestFocus();
                 break;
-            case "2":
-
-                switch(pantalla){
-                    case "PALABRAS":
-                        mensaje = "Ingresar una palabra";
+            case TWO:
+                switch (screen) {
+                    case SPANISH_WORDS:
+                        message = context.getString(R.string.enter_a_word);
                         break;
-                    case "CITAS":
-                        mensaje = "Ingresar una cita";
+                    case SPANISH_QUOTES:
+                        message = context.getString(R.string.enter_a_quote);
                         break;
-                    case "WORDS":
-                        mensaje = "Ingresar una palabra en inglés";
+                    case ENGLISH_WORDS:
+                        message = context.getString(R.string.enter_a_word_or_phrase_in_english);
                         break;
                 }
-
-                //mensaje = "Ingresar una palabra";
-                showMessage(contexto, mensaje, "NOK");
-                edtPalabra.requestFocus();
+                showMessage(context, message, NOK);
+                etWord.requestFocus();
                 break;
-            case "3":
-
-                switch(pantalla){
-                    case "PALABRAS":
-                        mensaje = "Ingresar significado de la palabra";
+            case THREE:
+                switch (screen) {
+                    case SPANISH_WORDS:
+                        message = context.getString(R.string.enter_word_meaning);
                         break;
-                    case "CITAS":
-                        mensaje = "Ingresar un autor";
+                    case SPANISH_QUOTES:
+                        message = context.getString(R.string.enter_an_author);
                         break;
-                    case "WORDS":
-                        mensaje = "Ingresar traducción de la palabra";
+                    case ENGLISH_WORDS:
+                        message = context.getString(R.string.enter_translation_of_the_word_or_phrase);
                         break;
                 }
-
-                //mensaje = "Ingresar significado";
-                showMessage(contexto, mensaje, "NOK");
-                edtSignificado.requestFocus();
+                showMessage(context, message, NOK);
+                etMeaning.requestFocus();
                 break;
         }
     }
-    
+
     public String getDate() {
-        String sFecha = "SIN FECHA";
+        String stringDate;
         Date date = new Date();
-        SimpleDateFormat fechaF = new SimpleDateFormat("d-M-yyyy", java.util.Locale.getDefault());
-        sFecha = fechaF.format(date);
-        return sFecha;
+        SimpleDateFormat formatDate = new SimpleDateFormat("d-M-yyyy", java.util.Locale.getDefault());
+        stringDate = formatDate.format(date);
+        return stringDate;
     }
 
-    public String traerSemanaAnterior(){
-        String fecha = "";
-        Date hoy = new Date();
-        Date diezDiasMas = new Date(hoy.getTime() - (86400000 * 7));
-        SimpleDateFormat fechaF = new SimpleDateFormat("d-M-yyyy", java.util.Locale.getDefault());
-        fecha = fechaF.format(diezDiasMas);
-        return fecha;
+    public String getPreviousWeek() {
+        String date;
+        Date today = new Date();
+        Date oneMoreWeek = new Date(today.getTime() - (86400000 * 7));
+        SimpleDateFormat formatDate = new SimpleDateFormat("d-M-yyyy", java.util.Locale.getDefault());
+        date = formatDate.format(oneMoreWeek);
+        return date;
     }
 
-    public String validarFechas(String desde, String hasta){
+    public void showMessage(Context context, String message, String iconType) {
+        Toast response = new Toast(context);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.message, null);
+        response.setView(view);
+        ImageView ivIcon = (ImageView) view.findViewById(R.id.imgMP);
+        if (iconType.equals(OK)) {
+            ivIcon.setImageResource(R.drawable.ic_accept);
+        } else {
+            ivIcon.setImageResource(R.drawable.ic_cancel);
+        }
+        TextView tvMessage = (TextView) view.findViewById(R.id.txtM1MP);
+        tvMessage.setText(message);
+        response.setDuration(Toast.LENGTH_LONG);
+        response.show();
+    }
+
+    /*public String validarFechas(String desde, String hasta) {
         String respuesta = "OK";
         SimpleDateFormat formato = new SimpleDateFormat("d-M-yyyy", java.util.Locale.getDefault());
         try {
             Date fechaDesde = formato.parse(desde);
             Date fechaHasta = formato.parse(hasta);
             Date hoy = formato.parse(getDate());
-            if(hoy.before(fechaHasta)){
-                respuesta = "Fecha final no puede ser posterior a "+getDate();
-            }else if(fechaHasta.before(fechaDesde)){
-                respuesta = "Fecha inicial no puede ser posterior a "+hasta;
+            if (hoy.before(fechaHasta)) {
+                respuesta = "Fecha final no puede ser posterior a " + getDate();
+            } else if (fechaHasta.before(fechaDesde)) {
+                respuesta = "Fecha inicial no puede ser posterior a " + hasta;
             }
         } catch (ParseException e) {
             Log.e("ERROR", e.getMessage());
@@ -143,7 +152,7 @@ public class Utilities {
         String sHora = "SIN HORA";
         Date date = new Date();
         SimpleDateFormat horaF = new SimpleDateFormat("H:mm a", java.util.Locale.getDefault());
-        sHora =  horaF.format(date);
+        sHora = horaF.format(date);
         return sHora;
     }
 
@@ -157,25 +166,8 @@ public class Utilities {
         return Image.getInstance(stream.toByteArray());
     }
 
-    public void showMessage(Context context, String message, String iconType) {
-        Toast response = new Toast(context);
-        LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate( R.layout.message, null );
-        response.setView(view);
-        ImageView ivIcon = (ImageView) view.findViewById(R.id.imgMP);
-        if(iconType.equals("OK")){
-            ivIcon.setImageResource(R.drawable.ic_accept);
-        }else{
-            ivIcon.setImageResource(R.drawable.ic_cancel);
-        }
-        TextView tvMessage = (TextView) view.findViewById(R.id.txtM1MP);
-        tvMessage.setText(message);
-        response.setDuration(Toast.LENGTH_LONG);
-        response.show();
-    }
-
-    public void hideKeyboard(Context context, EditText edt){
-        InputMethodManager imm = (InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
+    public void hideKeyboard(Context context, EditText edt) {
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(edt.getWindowToken(), 0);
-    }
+    }*/
 }

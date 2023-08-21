@@ -21,6 +21,11 @@ public class AdapterWordSpanish extends RecyclerView.Adapter<AdapterWordSpanish.
         this.onClickWord = onClickWord_;
     }
 
+    public void addSpanishWord(WordSpanish spanishWord) {
+        words.add(spanishWord);
+        notifyItemInserted(words.size() - 1);
+    }
+
     public interface onClickWord{
         void clickListWords(int clickedWord);
     }
@@ -51,7 +56,7 @@ public class AdapterWordSpanish extends RecyclerView.Adapter<AdapterWordSpanish.
         public ViewHolder(View v) {
             super(v);
             tvWord = (TextView) v.findViewById(R.id.tvWord);
-            tvMeaning = (TextView) v.findViewById(R.id.tvMeaning);
+            tvMeaning = (TextView) v.findViewById(R.id.tv_meaning);
             v.setOnClickListener(this);
         }
 

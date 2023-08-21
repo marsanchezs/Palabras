@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View vista) {
                 trPorFecha.setVisibility(View.VISIBLE);
-                txtDesde.setText(utilities.traerSemanaAnterior());
+                txtDesde.setText(utilities.getPreviousWeek());
                 txtHasta.setText(utilities.getDate());
                 cargarCalendario(llDesde, llHasta, txtDesde, txtHasta);
             }

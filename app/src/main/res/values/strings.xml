@@ -30,6 +30,16 @@
     <string name="to">Hasta</string>
     <string name="date">00–00–0000</string>
     <string name="select">Seleccionar…</string>
+    <string name="the_word">La palabra</string>
+    <string name="it_is_already_added">ya se encuentra agregada</string>
+    <string name="has_been_added">ha sido agregada</string>
+    <string name="has_been_updated">ha sido actualizada</string>
+    <string name="has_been_removed">ha sido eliminada</string>
+    <string name="could_not_add_the_word">No se ha podido agregar la palabra</string>
+    <string name="could_not_update_the_word">No se ha podido actualizar la palabra</string>
+    <string name="could_not_delete_the_word">No se ha podido eliminar la palabra</string>
+    <string name="safe_to_delete_the_word">¿Seguro de eliminar la palabra</string>
+    <string name="enter_a_word_and_its_meaning">Ingresar una palabra y su significado</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_visor_pdf">VisorPDF</string>
@@ -41,4 +51,12 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="enter_a_quote_and_its_author">Ingresar una cita y su autor</string>
+    <string name="enter_an_word_or_phrase_in_english_and_its_meaning">Ingresar una palabra en inglés y su significado</string>
+    <string name="enter_a_word">Ingresar una palabra</string>
+    <string name="enter_a_quote">Ingresar una cita</string>
+    <string name="enter_a_word_or_phrase_in_english">Ingresar una palabra en inglés</string>
+    <string name="enter_word_meaning">Ingresar significado de la palabra</string>
+    <string name="enter_an_author">Ingresar un autor</string>
+    <string name="enter_translation_of_the_word_or_phrase">Ingresar traducción de la palabra</string>
 </resources>
