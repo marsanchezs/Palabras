@@ -4,36 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.spanishwords.FragmentWordsSpanish">
+    tools:context=".ui.fragments.spanishwords.WordSpanishFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:id="@+id/ll_empty_screen"
-        android:layout_width="wrap_content"
+    <include
+        layout="@layout/empty_list"
+        android:id="@+id/empty_words_list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/iv_empty"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:src="@drawable/delete"
-            android:contentDescription="@string/icon" />
-
-        <TextView
-            android:id="@+id/tv_no_words"
-            style="@style/texto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/no_words_spanish" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clFP"
@@ -86,6 +68,8 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
                 android:background="@drawable/border_2">
 
                 <TextView
@@ -121,6 +105,8 @@
                 android:background="@drawable/border_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
                 android:divider="@color/colorLetra"
                 android:dividerHeight="1dp" />
         </LinearLayout>

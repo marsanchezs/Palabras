@@ -1,4 +1,4 @@
-package cl.mess.palabras.ui.adapters;
+package cl.mess.palabras.fragments.quote.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

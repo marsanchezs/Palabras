@@ -1,4 +1,4 @@
-package cl.mess.palabras.ui.fragments.spanishwords;
+package cl.mess.palabras.fragments.spanishword.ui;
 
 public interface DialogCallback {
     void onDialogResult(boolean result);

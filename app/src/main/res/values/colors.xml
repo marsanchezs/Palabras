@@ -15,4 +15,7 @@
     <color name="colorToolbar">#BB151313</color>
     <color name="colorFondoMensaje">#1F1609</color>
     <color name="visorPDF">#FFFFFFFF</color>
+    <color name="black_attenuated">#161616</color>
+    <color name="dark_gray">#313131</color>
+    <color name="light_gray">#394130</color>
 </resources>

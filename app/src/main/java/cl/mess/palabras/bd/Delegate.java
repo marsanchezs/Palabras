@@ -9,6 +9,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 import cl.mess.palabras.model.Quote;
+import cl.mess.palabras.fragments.spanishword.data.model.SpanishWord;
 import cl.mess.palabras.model.WordSpanish;
 import cl.mess.palabras.model.WordEnglish;
 
@@ -55,15 +56,15 @@ public class Delegate {
         return words;
     }
 
-    public Boolean validateWordSpanish(Context context, WordSpanish wordSpanish) {
+    public Boolean validateWordSpanish(Context context, SpanishWord spanishWord) {
         ///TABLA PALABRA
         //db.execSQL("CREATE TABLE PALABRA (Id INTEGER PRIMARY KEY AUTOINCREMENT, FECHA TEXT, PALABRA TEXT, SIGNIFICADO TEXT) ");
         boolean response = false;
         OpenHelper adm = new OpenHelper(context, DB_NAME, null, DB_VERSION);
         SQLiteDatabase db = adm.getWritableDatabase();
 
-        String word = wordSpanish.getWord().replaceAll("'", "''");
-        String meaning = wordSpanish.getMeaning().replaceAll("'", "''");
+        String word = spanishWord.getWord().replaceAll("'", "''");
+        String meaning = spanishWord.getMeaning().replaceAll("'", "''");
 
         String query = "SELECT * FROM PALABRA WHERE PALABRA = '" + word + "' AND SIGNIFICADO = '" + meaning + "'";
 
@@ -84,14 +85,14 @@ public class Delegate {
         return response;
     }
 
-    public String addWordSpanish(Context context, WordSpanish wordSpanish) {
+    public String addWordSpanish(Context context, SpanishWord spanishWord) {
         //TABLA PALABRA
         //db.execSQL("CREATE TABLE PALABRA (Id INTEGER PRIMARY KEY AUTOINCREMENT, FECHA TEXT, PALABRA TEXT, SIGNIFICADO TEXT) ");
         String response = "OK";
         OpenHelper adm = new OpenHelper(context, DB_NAME, null, DB_VERSION);
-        String date = wordSpanish.getDate().replaceAll("'", "\\'");
-        String word = wordSpanish.getWord().replaceAll("'", "''");
-        String meaning = wordSpanish.getMeaning().replaceAll("'", "''");
+        String date = spanishWord.getDate().replaceAll("'", "\\'");
+        String word = spanishWord.getWord().replaceAll("'", "''");
+        String meaning = spanishWord.getMeaning().replaceAll("'", "''");
 
         try (SQLiteDatabase db = adm.getWritableDatabase()) {
             ContentValues cvWord = new ContentValues();
@@ -108,14 +109,14 @@ public class Delegate {
         return response;
     }
 
-    public String deleteWordSpanish(Context context, WordSpanish wordSpanish) {
+    public String deleteWordSpanish(Context context, SpanishWord spanishWord) {
         //TABLA PALABRA
         //db.execSQL("CREATE TABLE PALABRA (Id INTEGER PRIMARY KEY AUTOINCREMENT, FECHA TEXT, PALABRA TEXT, SIGNIFICADO TEXT) ");
         String response = "OK";
         OpenHelper adm = new OpenHelper(context, DB_NAME, null, DB_VERSION);
-        String date = wordSpanish.getDate().replaceAll("'", "\\'");
-        String word = wordSpanish.getWord().replaceAll("'", "''");
-        String meaning = wordSpanish.getMeaning().replaceAll("'", "''");
+        String date = spanishWord.getDate().replaceAll("'", "\\'");
+        String word = spanishWord.getWord().replaceAll("'", "''");
+        String meaning = spanishWord.getMeaning().replaceAll("'", "''");
         String query = "DELETE FROM PALABRA WHERE FECHA = '" + date + "' AND PALABRA = '" + word + "' " +
                 "AND SIGNIFICADO = '" + meaning + "'";
         try (SQLiteDatabase db = adm.getWritableDatabase()) {
@@ -128,13 +129,13 @@ public class Delegate {
         return response;
     }
 
-    public String updateWordSpanish(Context context, WordSpanish wordSpanish, WordSpanish newWordSpanish) {
+    public String updateWordSpanish(Context context, SpanishWord spanishWord, SpanishWord newWordSpanish) {
         //TABLA PALABRA
         //db.execSQL("CREATE TABLE PALABRA (Id INTEGER PRIMARY KEY AUTOINCREMENT, FECHA TEXT, PALABRA TEXT, SIGNIFICADO TEXT) ");
         String response = "OK";
-        String date = wordSpanish.getDate().replaceAll("'", "\\'");
-        String word = wordSpanish.getWord().replaceAll("'", "''");
-        String meaning = wordSpanish.getMeaning().replaceAll("'", "''");
+        String date = spanishWord.getDate().replaceAll("'", "\\'");
+        String word = spanishWord.getWord().replaceAll("'", "''");
+        String meaning = spanishWord.getMeaning().replaceAll("'", "''");
         String condition = "FECHA = '" + date + "' AND PALABRA = '" + word + "' AND SIGNIFICADO = '" + meaning + "'";
         Log.e(CONDITION, condition);
         OpenHelper adm = new OpenHelper(context, DB_NAME, null, DB_VERSION);

@@ -1,4 +1,4 @@
-package cl.mess.palabras.ui.fragments;
+package cl.mess.palabras.fragments.englishword.ui;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -24,13 +24,13 @@ import java.util.ArrayList;
 import cl.mess.palabras.R;
 import cl.mess.palabras.bd.Delegate;
 import cl.mess.palabras.model.WordEnglish;
-import cl.mess.palabras.ui.adapters.AdapterWordEnglish;
+import cl.mess.palabras.fragments.englishword.ui.adapter.WordEnglishAdapter;
 import cl.mess.palabras.utilities.Utilities;
 
-public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish.onClickWord {
+public class FragmentWordsEnglish extends Fragment implements WordEnglishAdapter.OnClickEnglishWord {
 
     private Context context;
-    private AdapterWordEnglish adapter;
+    private WordEnglishAdapter adapter;
     private ArrayList<WordEnglish> filteredList;
     private boolean isFiltered = false;
     private AutoCompleteTextView edtSearch;
@@ -90,7 +90,7 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
     }
 
     @Override
-    public void clickListWords(int clickedWordEnglish) {
+    public void clickListEnglishWords(int clickedWordEnglish) {
         ArrayList<WordEnglish> words;
         if (!isFiltered) {
             words = delegate.getAllWordsEnglish(context);
@@ -301,7 +301,7 @@ public class FragmentWordsEnglish extends Fragment implements AdapterWordEnglish
             llv.setVisibility(View.GONE);
             llv2.setVisibility(View.VISIBLE);
             System.out.println("LISTA DE WORDS RV: " + words.get(0));
-            adapter = new AdapterWordEnglish(words, this);
+            adapter = new WordEnglishAdapter(words, this);
             rvWordEnglish.setAdapter(adapter);
             searchWord(edtSearch);
         }

@@ -1,4 +1,4 @@
-package cl.mess.palabras.ui.fragments;
+package cl.mess.palabras.fragments.quote;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import cl.mess.palabras.R;
 import cl.mess.palabras.bd.Delegate;
 import cl.mess.palabras.model.Quote;
-import cl.mess.palabras.ui.adapters.AdapterQuote;
+import cl.mess.palabras.fragments.quote.adapter.AdapterQuote;
 import cl.mess.palabras.utilities.Utilities;
 
 public class FragmentQuotes extends Fragment implements AdapterQuote.onClickQuote{

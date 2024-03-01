@@ -30,8 +30,8 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.Calendar;
 import java.util.Objects;
 
+import cl.mess.palabras.fragments.FragmentAdapter;
 import cl.mess.palabras.model.reportes.ReportePalabras;
-import cl.mess.palabras.ui.adapters.AdapterFragments;
 import cl.mess.palabras.utilities.Utilities;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         TabItem tabCitas = findViewById(R.id.tabQuotes);
         TabItem tabWords = findViewById(R.id.tabWordsEnglish);
 
-        AdapterFragments miAdaptador = new AdapterFragments(getSupportFragmentManager(), tabLayout.getTabCount());
-        visor.setAdapter(miAdaptador);
+        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+        visor.setAdapter(adapter);
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(visor));
         visor.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
